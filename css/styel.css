@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > .main {
+  width: 600px;
+  height: 300px;
+  background-color: #012169;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  overflow: hidden;
+  position: fixed;
+}
+body > .main > .gird01 {
+  position: relative;
+  overflow: hidden;
+}
+body > .main > .gird01::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  transform: rotate(29deg);
+  width: 368px;
+  height: 64px;
+  top: 33px;
+  left: -36px;
+}
+body > .main > .gird01::after {
+  content: "";
+  background-color: #c8102e;
+  position: absolute;
+  transform: rotate(30deg);
+  width: 430px;
+  height: 20px;
+  top: 53px;
+  left: -95px;
+}
+body > .main > .grid02 {
+  position: relative;
+  overflow: hidden;
+}
+body > .main > .grid02::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  transform: rotate(151deg);
+  width: 355px;
+  height: 64px;
+  top: 38px;
+  left: -36px;
+}
+body > .main > .grid02::after {
+  content: "";
+  background-color: #c8102e;
+  position: absolute;
+  transform: rotate(151deg);
+  width: 430px;
+  height: 20px;
+  top: 62px;
+  left: -100px;
+}
+body > .main > .grid03 {
+  position: relative;
+  overflow: hidden;
+}
+body > .main > .grid03::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  transform: rotate(151deg);
+  width: 508px;
+  height: 64px;
+  top: 11px;
+  left: -36px;
+}
+body > .main > .grid03::after {
+  content: "";
+  background-color: #c8102e;
+  position: absolute;
+  transform: rotate(151deg);
+  width: 430px;
+  height: 20px;
+  top: 105px;
+  left: -100px;
+}
+body > .main > .grid04 {
+  position: relative;
+  overflow: hidden;
+}
+body > .main > .grid04::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  transform: rotate(208deg);
+  width: 508px;
+  height: 64px;
+  top: 87px;
+  left: -36px;
+}
+body > .main > .grid04::after {
+  content: "";
+  background-color: #c8102e;
+  position: absolute;
+  transform: rotate(208deg);
+  width: 430px;
+  height: 20px;
+  top: 40px;
+  left: -100px;
+}
+body > .main > .plusRed {
+  display: contents;
+  position: relative;
+}
+body > .main > .plusRed::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 600px;
+  height: 50px;
+  background-color: #c8102e;
+  transform: rotate(90deg);
+  top: 0px;
+  left: -3px;
+}
+body > .main > .plusRed::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 600px;
+  height: 50px;
+  background-color: #c8102e;
+  top: 124px;
+  left: 0;
+}
+body > .main::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 600px;
+  height: 90px;
+  background-color: white;
+  transform: rotate(90deg);
+  top: 0px;
+  left: -3px;
+}
+body > .main::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 600px;
+  height: 90px;
+  background-color: white;
+  top: 104px;
+  left: 0;
+}
+body > .text-mobile {
+  display: none;
+}
+body > .text-desktop {
+  display: flex;
+  text-align: center;
+}
+body > .text-desktop > span {
+  margin-top: 360px;
+  text-align: center;
+  padding: 20px;
+  font-family: "Roboto Slab", serif;
+  color: #012169;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 640px) {
+  body > .main {
+    transform: rotate(90deg);
+  }
+  body > .text-mobile {
+    display: flex;
+    text-align: center;
+  }
+  body > .text-mobile > span {
+    margin-top: 660px;
+    text-align: center;
+    padding: 20px;
+    font-family: "Roboto Slab", serif;
+    color: #012169;
+  }
+  body > .text-desktop {
+    display: none;
+  }
+}/*# sourceMappingURL=styel.css.map */
